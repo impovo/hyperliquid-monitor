@@ -1,18 +1,19 @@
-# hyperliquid-monitor
-hyperliquid-monitor
-# Hyperliquid 多地址监听 & Telegram 推送
+# Hyperliquid Monitor - 多地址监听 & Telegram 推送
 
-项目用于监听 Hyperliquid 上多个地址的仓位变化及挂单 / 委托状态，并推送信息到 Telegram。
+## 功能
+- 监听多个地址的仓位变化（size, leverage, entry_price, liquidation_price, pnl）
+- 监控挂单状态变化（委托新增/取消）
+- 支持地址备注（traders.json）
+- 推送消息至 Telegram Bot
 
 ## 配置
-
-- `traders.json`：地址–备注对应列表
+- `traders.json`：填写地址–备注对照表
 - 环境变量：
-  - `TELEGRAM_TOKEN`：Telegram Bot Token
-  - `TELEGRAM_CHAT_ID`：聊天或群组 ID
+  - `TELEGRAM_TOKEN`
+  - `TELEGRAM_CHAT_ID`
+  - 可选：`POLL_INTERVAL`（轮询秒数，默认 20）
 
-## 启动方式
-
+## 部署
 ```bash
 pip install -r requirements.txt
 python hyperliquid_monitor.py
