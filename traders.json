@@ -1,0 +1,12 @@
+
+---
+
+### **`traders.json`**
+
+```json
+{
+  "0xcb92c5988b1d4f145a7b481690051f03ead23a13": "ETH高胜率",
+  "0x916ea2a9f3ba1ddd006c52babd0216e2ac54ed32": "内幕哥",
+  "0x5b5d51203a0f9079f8aeb098a6523a13f298c060": "排名第一",
+  "0xb83de012dba672c76a7dbbbf3e459cb59d7d6e36": "排名第二"
+}
